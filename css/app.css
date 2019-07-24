@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #eaeaea
+}
+
+ul {
+    margin: 0;
+}
+
+ul > li {
+    margin: initial;
+    padding: initial;
+}
+
+
+.bg-black {
+    background-color: black;
+}
+.bg-black:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.text-white {
+    color: white;
+}
+.text-black {
+    color: black;
+}
+
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-center {
+    float: center;
+}
+.clearfix {
+    clear: both;
+}
+
+
+.w-100 {
+    width: 100%
+}
+
+
+.ml-0,
+.mx-0,
+.m-0 {
+    margin-left: 0rem
+}
+.mr-0,
+.mx-0,
+.m-0 {
+    margin-right: 0rem
+}
+.mt-0,
+.my-0,
+.m-0 {
+    margin-top: 0rem
+}
+.mb-0,
+.my-0,
+.m-0 {
+    margin-bottom: 0rem
+}
+.ml-1,
+.mx-1,
+.m-1 {
+    margin-left: .25rem
+}
+.mr-1,
+.mx-1,
+.m-1 {
+    margin-right: .25rem
+}
+.mt-1,
+.my-1,
+.m-1 {
+    margin-top: .25rem
+}
+.mb-1,
+.my-1,
+.m-1 {
+    margin-bottom: .25rem
+}
+.ml-3,
+.mx-3,
+.m-3 {
+    margin-left: 1rem
+}
+.mr-3,
+.mx-3,
+.m-3 {
+    margin-right: 1rem
+}
+.mt-3,
+.my-3,
+.m-3 {
+    margin-top: 1rem
+}
+.mb-3,
+.my-3,
+.m-3 {
+    margin-bottom: 1rem
+}
+.ml-4,
+.mx-4,
+.m-4 {
+    margin-left: 1.5rem
+}
+.mr-4,
+.mx-4,
+.m-4 {
+    margin-right: 1.5rem
+}
+.mt-4,
+.my-4,
+.m-4 {
+    margin-top: 1.5rem
+}
+.mb-4,
+.my-4,
+.m-4 {
+    margin-bottom: 1.5rem
+}
+
+
+.p-0 {
+    padding: 0
+}
+.p-1 {
+    padding: .25rem
+}
+.p-2 {
+    padding: .5rem
+}
+.p-3 {
+    padding: 1rem
+}
+.p-4 {
+    padding: 1.5rem
+}
+.p-5 {
+    padding: 3rem
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+}
+
+.profile {
+    flex: 1;
+    height: 100%;
+    background-color: white;
+}
+
+.main-content {
+    flex: 1;
+    height: 100%;
+}
+
+/**
+ * Reverse the copyright
+ * https://medium.com/@mmeida/how-to-insert-the-copyleft-symbol-f093113cc2cf
+ */
+.copy-left {
+    display: inline-block;
+    text-align: right;
+    margin: 0px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: “FlipH”;
+}
+
+ul.list-unstyled,
+ol.list-unstyled,
+.nav > ul,
+.nav > ol {
+    list-style: none;
+    padding: 0;
+}
+
+ul.list-horizontal > li,
+ol.list-horizontal > li {
+    display: inline-block
+}
+
+.nav > ul > li,
+.nav > ol > li {
+    padding: .5rem 1rem;
+}
+
+
+.circle,
+.img-profile {
+    border-radius: 50%;
+}
+
+
+@media (min-width: 768px) {
+    .profile {
+        max-width: 200px
+    }
+}
