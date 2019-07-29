@@ -8,9 +8,9 @@ window.onload = function () {
  */
 includeHTML = function () {
     var attr = 'include-html';
-    var z, i, elmnt, file, xhttp;
+    var elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements with include html tag: */
-    z = document.getElementsByTagName("*");
+    // z = document.getElementsByTagName("*");
     for (elmnt of document.querySelectorAll('[' + attr + ']')) {
         /*search for elements with a certain atrribute:*/
         file = elmnt.getAttribute(attr);
@@ -23,7 +23,7 @@ includeHTML = function () {
                     if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
                     /* Remove the attribute, and call this function once more: */
                     elmnt.removeAttribute(attr);
-                    // includeHTML();
+                    includeHTML();
                 }
             }
             xhttp.open("GET", file, true);
