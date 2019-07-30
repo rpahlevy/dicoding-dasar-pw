@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: "Raleway", sans-serif;
     background-color: #eaeaea;
+    background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/black-Linen.png');
 }
 
 .row-flex {
@@ -24,6 +25,7 @@ body {
 
     display: flex;
 
+    background-color:#eaeaea;
     margin: 0 auto;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
