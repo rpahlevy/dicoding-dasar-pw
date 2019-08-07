@@ -1,6 +1,10 @@
-window.onload = function () {
+// window.onload = function () {
+//     console.log('onload')
+    
+// }
+document.addEventListener('DOMContentLoaded', function(event) {
     includeHTML();
-}
+})
 
 /**
  * Include html snippets via JS

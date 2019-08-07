@@ -1,8 +1,9 @@
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
+    line-height: 1.5;
     background-color: #eaeaea;
-    background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/black-Linen.png');
+    background-image: url('/img/black-Linen.png');
 }
 
 .row-flex {
@@ -186,12 +187,14 @@ ul > li {
 .profile {
     flex: 1;
     /* height: 100%; */
+    max-width: 200px;
     background-color: white;
 }
 
 .main-content {
     flex: 1;
     height: 100%;
+    padding: 2rem 6.5rem 2rem 2.5rem;
 }
 
 .footer {
@@ -227,9 +230,21 @@ ol.list-horizontal > li {
     display: inline-block;
 }
 
-.nav > ul > li,
-.nav > ol > li {
+.nav > ul > li > .nav-link,
+.nav > ol > li > .nav-link {
+    display: block;
     padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #444;
+}
+
+.nav > ul > li > .nav-link:hover,
+.nav > ol > li > .nav-link:hover {
+    text-decoration: underline;
+    color: #111;
+    font-weight: bold;
+    background-color: #eaeaea;
+    /* border: 3px dashed #444; */
 }
 
 .circle,
@@ -237,8 +252,25 @@ ol.list-horizontal > li {
     border-radius: 50%;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .profile {
         max-width: 200px;
     }
+} */
+
+p {
+    line-height: 1.75;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -.5rem .5rem -.5rem;
+}
+.portfolio-wrapper > .portfolio-item {
+    flex: 1;
+    padding: 0 .5rem;
+}
+.img-responsive {
+    width: 100%;
 }
