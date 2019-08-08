@@ -236,6 +236,7 @@ ol.list-horizontal > li {
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: #444;
+    transition: all .1s ease;
 }
 
 .nav > ul > li > .nav-link:hover,
@@ -270,6 +271,10 @@ p {
 .portfolio-wrapper > .portfolio-item {
     flex: 1;
     padding: 0 .5rem;
+    transition: all .1s ease;
+}
+.portfolio-wrapper > .portfolio-item:hover {
+    transform: scale(1.1);
 }
 .img-responsive {
     width: 100%;
